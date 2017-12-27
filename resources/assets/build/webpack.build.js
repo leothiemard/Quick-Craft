@@ -4,7 +4,6 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const HtmlCriticalPlugin = require('html-critical-webpack-plugin');
 const config = require('../config.json');
 
 
@@ -54,38 +53,5 @@ module.exports = function() {
             })
         ]
     };
-    config.critical.forEach(function(criticalObj) {
-        conf.plugins.push(new HtmlCriticalPlugin({
-            base: './',
-            src: config.proxyUrl + criticalObj.url,
-            dest: config.criticalPath + 'critical_' + criticalObj.template + '.min.css',
-            ignore: [],
-            inline: false,
-            minify: true,
-            extract: true,
-            width: 1280,
-            height: 1200,
-            penthouse: {
-                css: './public/css/styles.css',
-                forceInclude: [
-                    '.o-wrapper--full-vh',
-                    '.o-layout--flex',
-                    '.o-layout--flex-end',
-                    '.o-layout--flex-start',
-                    '.o-layout__item',
-                    '.l-head--reverse',
-                    '.l-head--entry',
-                    '.c-nav__link',
-                    '.ratio-box',
-                    '.ratio-box img',
-                    '.blur-up',
-                    '.u-blur--30',
-                    '.u-blur--20',
-                    '#js-nav-switch'
-                ],
-                strict: false
-            }
-        }));
-    });
     return conf;
 };
