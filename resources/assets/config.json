@@ -6,5 +6,5 @@
     ],
     "plugins": "./resources/assets/scripts/plugins.js"
   },
-  "proxyUrl": "http://www.quick-craft.localhost"
+  "proxyUrl": "http://quick-craft.localhost"
 }
