@@ -13,14 +13,25 @@ Make sure all dependencies have been installed before moving on:
 * [Node.js](http://nodejs.org/) >= 7.5.x
 * [Yarn](https://yarnpkg.com/en/docs/install)
 
-## Getting started
+## Getting Started
+
+### Initialize
+
 ```
     $ yarn
     $ composer install
     $ yarn build
 ```
 
-### Build commands
+### Configurations
+
+1. Create a new empty database
+2. Serve the `/public` folder locally
+3. Duplicate `.env.example` and rename the copy `.env`
+4. Open the `.env` file and update with your own environment variables
+4. Open the `/resources/build/config.json` file and update the `proxyUrl` variable.  
+
+### Build Commands
 
 * `yarn start` — Compile assets when file changes are made, start Browsersync session
 * `yarn build` — Compile and optimize the files in your assets directory
