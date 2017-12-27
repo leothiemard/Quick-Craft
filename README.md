@@ -1,4 +1,4 @@
-![Quick-Craft Logo](.resources/assets/images/favicons/android-chrome-256x256.png)
+![Quick-Craft Logo](resources/assets/images/favicons/android-chrome-256x256.png)
 
 Welcome to Quick-Craft!
 ====
