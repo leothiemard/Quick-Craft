@@ -30,9 +30,9 @@ Make sure all dependencies have been installed before moving on:
 3. Duplicate `.env.example` and rename the copy `.env`
 4. Open the `.env` file and update with your own environment variables
 5. Open the `/resources/assets/config.json` file and update the `proxyUrl` variable
-6. There are two possibilities to run the Craft built-in installer:
-    1. Run `yarn start`, wait for browser-sync to launch your browser and navigate to `http://localhost:8000/admin`  
-    2. *OR* — Go to your local environmnent site (i.g. `your-app.dev`) and navigate to `your-app.dev/admin`
+6. There are two ways to run the Craft built-in installer:
+    1. Run `yarn start`, wait for your browser to be launched by BrowserSync and navigate to `http://localhost:8000/admin`  
+    2. *OR* — Go to your local environment site (i.g. `http://your-app.dev`) and navigate to `http://your-app.dev/admin`
       
 ### Build Commands
 
