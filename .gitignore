@@ -45,10 +45,6 @@ docker/*
 .sass-cache
 
 # Static assets
-/craft/templates/*
-/resources/views/_inlinejs
-/resources/views/_includes/_critical/critical_*.html
-/resources/views/_includes/_scripts/*.html
 /public/assets
 /public/css
 /public/js
