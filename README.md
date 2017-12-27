@@ -60,4 +60,23 @@ SQL credentials.
 
 ## Documentation
 
+#### Content-management
+
 * [CraftCMS](https://craftcms.com/docs/introduction)
+
+#### Templating
+
+* [Twig](https://twig.symfony.com/doc/2.x/)
+
+#### Scripts
+
+* [ES6](http://es6-features.org/)
+
+#### Styles
+
+* [BEM Naming](http://getbem.com/naming/)
+* [Managing CSS Projects with ITCSS](https://www.youtube.com/watch?v=1OKZOV-iLj4&feature=youtu.be)
+* [BEMIT: Taking the BEM Naming Convention a Step Further](https://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/)
+* [inuitcss](https://github.com/inuitcss/inuitcss)
+* [iotaCSS](https://www.iotacss.com/)
+* [Nebula CSS](http://rbrtsmith.com/nebula-css/)
