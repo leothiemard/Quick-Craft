@@ -1,0 +1,25 @@
+
+/* -------------------------------------------------------------------------
+ * COLORS
+ *
+ * Import all color groups and build the main color map
+ * The values here are for sample proposes, consider add your owns
+ *
+ */
+
+@import "foundations__colors-brand";
+@import "foundations__colors-neutral";
+@import "foundations__colors-state";
+@import "foundations__colors-vendor";
+@import "foundations__colors-other";
+
+
+// Color groups map
+
+$f-colors: (
+  "brand":        $f-colors-brand,
+  "neutral":      $f-colors-neutral,
+  "state":        $f-colors-state,
+  "vendor":       $f-colors-vendor,
+  "other":        $f-colors-other,
+) !default;

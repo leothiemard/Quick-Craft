@@ -1,0 +1,9 @@
+{
+  "name": "quick-craft.io",
+  "version": "1.0.0",
+  "description": "A modern development environment boilerplate to quick-start your project using Craft CMS.",
+  "main": "index.js",
+  "repository": "git@github.com:leothiemard/quick-craft.git",
+  "author": "Léo Thiémard <leo.thiemard@gmail.com>",
+  "license": "MIT"
+}

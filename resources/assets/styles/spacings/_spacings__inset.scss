@@ -1,0 +1,41 @@
+/* -------------------------------------------------------------------------
+ * INSET
+ *
+ * To give space between container and content.
+ *
+ * TIP:
+ * You can modify the amount of generated spaces by overriding the $sp-inset__spaces variable.
+ *
+ */
+
+// Spacing variables
+// --------------------------------------------------
+
+// Spacing toggling
+
+$sp-inset__enabled:           true !default;
+
+
+// Spaces
+
+$sp-inset__spaces:            $f-spaces !default;
+
+
+// Space as a mixin
+// --------------------------------------------------
+
+@mixin sp-inset($_spacing-value) {
+  padding: $_spacing-value;
+}
+
+
+// Space selector output
+// --------------------------------------------------
+
+@if ($sp-inset__enabled) {
+  @each $_spacing-name, $_spacing-value in $sp-inset__spaces {
+    .sp-inset--#{$_spacing-name} {
+      @include sp-inset($_spacing-value);
+    }
+  }
+}

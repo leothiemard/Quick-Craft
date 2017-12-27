@@ -1,0 +1,55 @@
+
+/* -------------------------------------------------------------------------
+ * ALIGNMENTS
+ *
+ * Force text alignment
+ *
+ * Params:
+ * ALIGNMENTS .......................... Horizontal alignments
+ *
+ */
+
+
+// Utility variables
+// --------------------------------------------------
+
+// Utility toggling
+
+$u-align--enabled:                      true !default;
+
+// Alignments
+
+$u-align__alignments:                   (left, center, right) !default;
+
+// Options Breakpoints
+
+$u-align__mod-bp--enabled:              true !default;
+$u-align__mod-bp:                       map_remove($f-breakpoints, "xxs") !default;
+
+
+// Utility selector output
+// --------------------------------------------------
+
+@if ($u-align--enabled) {
+  @each $_alignment in $u-align__alignments {
+    .u-align--#{$_alignment} {
+      text-align: $_alignment !important;
+    }
+  }
+}
+
+
+// Breakpoints modifiers
+// --------------------------------------------------
+
+@if ($u-align--enabled and $u-align__mod-bp--enabled) {
+  @each $_bp-name, $_bp-value in $u-align__mod-bp {
+    @include t-mq($from: $_bp-name) {
+      @each $_alignment in $u-align__alignments {
+        .u-align--#{$_alignment}#{s-core-string-breakpoint($_bp-name)} {
+          text-align: $_alignment !important;
+        }
+      }
+    }
+  }
+}

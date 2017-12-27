@@ -1,0 +1,26 @@
+
+/* -------------------------------------------------------------------------
+ * LINE HEIGHTS
+ *
+ * Values should be expressed unit less
+ * The values here are for sample proposes, consider add your owns
+ *
+ */
+
+
+// Main line heights
+
+$f-line-height--tiny:            1 !default;
+$f-line-height--small:           1.25 !default;
+$f-line-height--medium:          1.618 !default;
+$f-line-height--large:           2 !default;
+
+
+// Line heights map
+
+$f-line-heights: (
+  "tiny":       $f-line-height--tiny,
+  "small":      $f-line-height--small,
+  "medium":     $f-line-height--medium,
+  "large":      $f-line-height--large,
+) !default;

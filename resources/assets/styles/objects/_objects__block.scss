@@ -1,0 +1,140 @@
+/* -------------------------------------------------------------------------
+ * BLOCK
+ *
+ * Stacked content object with or without header and footer.
+ * A simple abstraction to cover a very commonly occurring design pattern.
+ *
+ * Params:
+ * ALIGNMENT .......................... Horizontal text alignment
+ *
+ */
+
+
+// Object variables
+// --------------------------------------------------
+
+// Object toggling
+
+$o-block--enabled:                        true !default;
+
+// Object Params
+
+$o-block__alignment:                      center !default;
+
+// Modifiers Alignments
+
+$o-block__mod-alignments--enabled:        true !default;
+$o-block__mod-alignments:                 (left, center, right) !default;
+
+// Modifiers Stretch
+
+$o-block__mod-stretch--enabled:           true !default;
+
+
+// Object as a mixin
+// --------------------------------------------------
+
+@mixin o-block($_alignment-direction: $o-block__alignment) {
+  display: block;
+  text-align: $_alignment-direction;
+}
+
+@mixin o-block__header() {
+  display: block;
+}
+
+@mixin o-block__body() {
+  display: block;
+}
+
+@mixin o-block__footer() {
+  display: block;
+}
+
+
+// Object selector output
+// --------------------------------------------------
+
+@if ($o-block--enabled) {
+  .o-block {
+    @include o-block();
+  }
+
+  .o-block__header {
+    @include o-block__header();
+  }
+
+  .o-block__body {
+    @include o-block__body();
+  }
+
+  .o-block__footer {
+    @include o-block__footer();
+  }
+}
+
+// Alignment modifiers
+// --------------------------------------------------
+
+@mixin o-block__mod-alignment($_alignment-direction: left) {
+  .o-block--#{$_alignment-direction} {
+    text-align: $_alignment-direction;
+  }
+}
+
+@if ($o-block--enabled and $o-block__mod-alignments--enabled) {
+  @each $_alignment-direction in $o-block__mod-alignments {
+    @include o-block__mod-alignment($_alignment-direction);
+  }
+}
+
+
+// Stretch modifier output
+// --------------------------------------------------
+
+@mixin o-block--stretch() {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin o-block__body--stretch() {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+
+@mixin o-block__mod-stretch() {
+  .o-block--stretch {
+    @include o-block--stretch();
+
+    > .o-block__body {
+      @include o-block__body--stretch();
+    }
+  }
+}
+
+@if ($o-block--enabled and $o-block__mod-stretch--enabled) {
+  @include o-block__mod-stretch();
+}
+
+
+// Unset as mixin
+// --------------------------------------------------
+
+@mixin o-block--unset() {
+  display: inherit;
+  text-align: inherit;
+}
+
+@mixin o-block__header--unset() {
+  display: inherit;
+}
+
+@mixin o-block__body--unset() {
+  display: inherit;
+}
+
+@mixin o-block__footer--unset() {
+  display: inherit;
+}

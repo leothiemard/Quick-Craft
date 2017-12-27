@@ -1,0 +1,79 @@
+/* -------------------------------------------------------------------------
+ * WRAPPER
+ *
+ * Page-level constraining and wrapping elements.
+ *
+ */
+
+
+// Object variables
+// --------------------------------------------------
+
+// Object toggling
+
+$o-wrapper--enabled:                  true !default;
+
+// Modifiers Breakpoints
+
+$o-wrapper__mod-bp-from--enabled:     true !default;
+$o-wrapper__mod-bp-to--enabled:       true !default;
+$o-wrapper__mod-bp:                   map-remove($f-breakpoints, "xxs") !default;
+
+
+// Object selector output
+// --------------------------------------------------
+
+@if ($o-wrapper--enabled) {
+  .o-wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    @include t-clearfix;
+  }
+}
+
+
+// Size modifiers (from)
+// --------------------------------------------------
+
+@mixin o-wrapper--from($_bp-name: "xs") {
+  .o-wrapper--from#{s-core-string-breakpoint($_bp-name)} {
+    @each $_s-bp-name, $_s-bp-size in $o-wrapper__mod-bp {
+
+      @if ($_s-bp-size >= map-get($o-wrapper__mod-bp, $_bp-name)) {
+        @include t-mq($from: $_s-bp-name) {
+          max-width: s-core-px-to-rem(map-get($o-wrapper__mod-bp, $_s-bp-name));
+        }
+      }
+    }
+  }
+}
+
+@if ($o-wrapper--enabled and $o-wrapper__mod-bp-from--enabled) {
+  @each $_bp-name, $_bp-size in $o-wrapper__mod-bp {
+    @include o-wrapper--from($_bp-name);
+  }
+}
+
+
+// Size modifiers (to)
+// --------------------------------------------------
+
+@mixin o-wrapper--to($_bp-name: "xs") {
+  .o-wrapper--to#{s-core-string-breakpoint($_bp-name)} {
+    @each $_s-bp-name, $_s-bp-size in $o-wrapper__mod-bp {
+
+      @if ($_s-bp-size >= map-get($o-wrapper__mod-bp, $_bp-name)) {
+        @include t-mq($from: $_s-bp-name) {
+          max-width: s-core-px-to-rem(map-get($o-wrapper__mod-bp, $_bp-name));
+        }
+      }
+    }
+  }
+}
+
+@if ($o-wrapper--enabled and $o-wrapper__mod-bp-to--enabled) {
+  @each $_bp-name, $_bp-size in $o-wrapper__mod-bp {
+    @include o-wrapper--to($_bp-name);
+  }
+}

@@ -1,0 +1,28 @@
+
+/* -------------------------------------------------------------------------
+ * SHADOWS
+ *
+ * Define uncolored shadow sizes
+ * The values here are for sample proposes, consider add your owns
+ *
+ */
+
+
+// Main shadow
+
+$f-shadow:                    2px 2px 2px 2px !default;
+
+// Shadow variants
+
+$f-shadow--discrete:          $f-shadow !default;
+$f-shadow--elevated:          0 14px 28px 0 !default;
+$f-shadow--sunken:            inset 0 0 28px 0 !default;
+
+
+// Shadows map
+
+$f-shadows: (
+  "discrete":                 $f-shadow--discrete,
+  "elevated":                 $f-shadow--elevated,
+  "sunken":                   $f-shadow--sunken
+) !default;

@@ -1,0 +1,61 @@
+
+/* -------------------------------------------------------------------------
+ * BREAKPOINTS
+ *
+ * Viewport breakpoints
+ * Values should be expressed in PX.
+ * The values here are for sample proposes, consider add your owns
+ *
+ * Extracted from [Google Material Design]
+ * (https://www.google.com/design/spec/layout/adaptive-ui.html)
+ *
+ */
+
+
+// Main breakpoints
+
+$f-breakpoint--xxs:         1px !default;
+$f-breakpoint--xs:          480px !default;
+$f-breakpoint--sm:          600px !default;
+$f-breakpoint--sml:         840px !default;
+$f-breakpoint--md:          960px !default;
+$f-breakpoint--lg:          1280px !default;
+$f-breakpoint--xl:          1440px !default;
+$f-breakpoint--xxl:         1600px !default;
+$f-breakpoint--xxxl:        1920px !default;
+
+
+// Breakpoints map
+
+$f-breakpoints: (
+  "xxs":                    $f-breakpoint--xxs,
+  "xs":                     $f-breakpoint--xs,
+  "sm":                     $f-breakpoint--sm,
+  "sml":                    $f-breakpoint--sml,
+  "md":                     $f-breakpoint--md,
+  "lg":                     $f-breakpoint--lg,
+  "xl":                     $f-breakpoint--xl,
+  "xxl":                    $f-breakpoint--xxl,
+  "xxxl":                   $f-breakpoint--xxxl,
+) !default;
+
+
+////////////////////////////////////////////////////////////////////////////////
+//                               W A R N I N G                                //
+//                  DO NOT MODIFY ANYTHING BEYOND THIS POINT                  //
+////////////////////////////////////////////////////////////////////////////////
+
+/* SAFE CHECKING
+ * Check that the chosen breakpoints are pixels.
+ */
+
+@each $_name, $_size in $f-breakpoints {
+
+  @if (type-of($_size) != number) {
+    @error "`$f-breakpoints: #{$_name}` needs to be a number.";
+  }
+
+  @if (unit($_size) != "px") {
+    @error "`$f-breakpoints: #{$_name}` needs to be a pixel value.";
+  }
+}

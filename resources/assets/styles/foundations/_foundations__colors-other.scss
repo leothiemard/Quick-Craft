@@ -1,0 +1,20 @@
+
+/* -------------------------------------------------------------------------
+ * COLORS OTHER
+ *
+ * Define all other colors
+ * The values here are for sample proposes, consider add your owns
+ *
+ */
+
+
+// Main other colors
+
+$f-color__digital-blue:             #0070d2 !default;
+
+
+// Other color map
+
+$f-colors-other: (
+  "digital-blue":                   $f-color__digital-blue,
+) !default;

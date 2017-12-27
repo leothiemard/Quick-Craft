@@ -1,0 +1,42 @@
+/* -------------------------------------------------------------------------
+ * COLORS
+ *
+ * Foundation colors as a background color
+ *
+ */
+
+
+// Utility variables
+// --------------------------------------------------
+
+// Utility toggling
+
+$u-bg-colors--enabled:         true !default;
+
+// Colors maps
+
+$u-bg-colors__maps:            $f-colors !default;
+
+
+// Utilities output
+// --------------------------------------------------
+
+@if ($u-bg-colors--enabled) {
+
+  @each $_bg-color-group__name, $_bg-color-group__map in $u-bg-colors__maps {
+
+    @each $_bg-color-name, $_bg-color-value in $_bg-color-group__map {
+
+      @if ($_bg-color-group__name != "others") {
+        $_bg-color-name: unquote("#{$_bg-color-group__name}-#{$_bg-color-name}");
+      }
+
+      .u-bg-color--#{$_bg-color-name} {
+        background-color: $_bg-color-value !important;
+      }
+
+    }
+
+  }
+
+}

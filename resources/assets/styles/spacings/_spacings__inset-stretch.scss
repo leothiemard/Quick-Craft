@@ -1,0 +1,38 @@
+/* -------------------------------------------------------------------------
+ * INSET STRETCH
+ *
+ * To give space between container and content emphasizing right and left spaces.
+ *
+ * TIP:
+ * You can modify the amount of generated spaces by overriding the $sp-inset-stretch__spaces variable.
+ *
+ */
+
+// Spacing variables
+// --------------------------------------------------
+
+// Spacing toggling
+
+$sp-inset-stretch__enabled:               true !default;
+
+// Spaces
+
+$sp-inset-stretch__spaces:                $f-spaces !default;
+
+// Space as a mixin
+// --------------------------------------------------
+
+@mixin sp-inset-stretch($_spacing-value) {
+  padding: $_spacing-value ($_spacing-value * .5);
+}
+
+// Space selector output
+// --------------------------------------------------
+
+@if ($sp-inset-stretch__enabled) {
+  @each $_spacing-name, $_spacing-value in $sp-inset-stretch__spaces {
+    .sp-inset-stretch--#{$_spacing-name} {
+      @include sp-inset-stretch($_spacing-value);
+    }
+  }
+}

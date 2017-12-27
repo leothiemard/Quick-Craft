@@ -1,0 +1,37 @@
+
+/* -------------------------------------------------------------------------
+ * OBJECTS
+ *
+ * Unstyled design patterns
+ * Consider extend with your owns
+ *
+ * block .................. Stacked content object with or without header and footer
+ * box .................... The box object simply boxes off content
+ * bullet ................. The bullet pattern is used to align an icon with some text
+ * crop ................... A cropping wrapper with preserved ratio
+ * flag ................... A media object based on tables
+ * layout ................. Grid-like layout system
+ * list-bare .............. Strip list-like appearance
+ * list-inline ............ List of items in one line
+ * media .................. Image-like and text-like content side-by-side
+ * pack ................... Pack up elements horizontally to fill an equal
+ * ratio .................. Ratio-bound content block
+ * table .................. For manipulating the structure of HTML tables
+ * wrapper ................ Page-level constraining and wrapping elements
+ *
+ */
+
+
+@import 'objects__block';
+@import 'objects__box';
+@import 'objects__bullet';
+@import 'objects__crop';
+@import 'objects__flag';
+@import 'objects__layout';
+@import 'objects__list-bare';
+@import 'objects__list-inline';
+@import 'objects__media';
+@import 'objects__pack';
+@import 'objects__ratio';
+@import 'objects__table';
+@import 'objects__wrapper';

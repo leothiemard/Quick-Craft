@@ -1,0 +1,105 @@
+/* -------------------------------------------------------------------------
+ * MEDIA
+ *
+ * Place any image-like and text-like content side-by-side, as per:
+ * http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code
+ *
+ */
+
+
+// Object variables
+// --------------------------------------------------
+
+// Object toggling
+
+$o-media--enabled:                      true !default;
+
+// Modifier Reverse
+
+$o-media__mod-reverse--enabled:         true !default;
+
+
+// Object as a mixin
+// --------------------------------------------------
+
+@mixin o-media() {
+  display: block;
+  @include t-clearfix;
+}
+
+@mixin o-media__img() {
+  float: left;
+
+  > img {
+    display: block;
+  }
+}
+
+@mixin o-media__body() {
+  overflow: hidden;
+  display: block;
+
+  &,
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+// Object selector output
+// --------------------------------------------------
+
+@if ($o-media--enabled) {
+  .o-media {
+    @include o-media();
+  }
+
+  .o-media__img {
+    @include o-media__img();
+  }
+
+  .o-media__body {
+    @include o-media__body();
+  }
+}
+
+// Reverse modifier
+// --------------------------------------------------
+
+@mixin o-media__img--reverse() {
+  float: right;
+}
+
+@mixin o-media__mod-reverse() {
+  .o-media--reverse {
+    > .o-media__img {
+      @include o-media__img--reverse;
+    }
+  }
+}
+
+@if ($o-media--enabled and $o-media__mod-reverse--enabled) {
+  @include o-media__mod-reverse();
+}
+
+
+// Unset as mixin
+// --------------------------------------------------
+
+@mixin o-media--unset() {
+  display: inherit;
+  @include t-clearfix--unset;
+}
+
+@mixin o-media__img--unset() {
+  float: inherit;
+
+  > img {
+    display: inherit;
+  }
+}
+
+@mixin o-media__body--unset() {
+  overflow: inherit;
+  display: inherit;
+}

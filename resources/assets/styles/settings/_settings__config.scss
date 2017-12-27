@@ -1,0 +1,42 @@
+
+/* -------------------------------------------------------------------------
+ * CONFIG
+ *
+ * Global configuration: env, paths, ...
+ *
+ */
+
+
+/* -------------------------------------------------------------------------
+ * ENVIRONMENT
+ * dev .................. Development
+ * prod ................. Production
+ */
+
+$s-config__env:                       "prod" !default;
+
+
+/* -------------------------------------------------------------------------
+ * DEBUG
+ * for debugging proposes
+ */
+
+$s-config__debug:                     if($s-config__env == "dev", true, false) !default;
+
+
+/* -------------------------------------------------------------------------
+ * PATHS
+ * where to refer for fonts, images and other resources
+ */
+
+$s-config__path--img:                 "../img" !default;
+$s-config__path--fonts:               "../fonts" !default;
+
+
+/* -------------------------------------------------------------------------
+ * SPECIAL CHARS
+ * peculiar chars used on strings, separators and suffixes
+ */
+
+$s-config__special-char--breakpoint-separator:     \@ !default;
+$s-config__special-char--ratio-separator:          \: !default;

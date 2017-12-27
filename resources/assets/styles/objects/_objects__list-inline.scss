@@ -1,0 +1,48 @@
+/* -------------------------------------------------------------------------
+ * LIST IN-LINE
+ *
+ * The list-inline object simply displays a list of items in one line.
+ *
+ */
+
+
+// Object variables
+// --------------------------------------------------
+
+// Object toggling
+
+$o-list-inline--enabled:                      true !default;
+
+// Object as a mixin
+// --------------------------------------------------
+
+@mixin o-list-inline() {
+  font-size: 0;
+
+  > * {
+    font-size: s-core-px-to-rem($s-core__font-size);
+    display: inline-block;
+  }
+}
+
+
+// Object selector output
+// --------------------------------------------------
+
+@if ($o-list-inline--enabled) {
+  .o-list-inline {
+    @include o-list-inline();
+  }
+}
+
+// Unset as mixin
+// --------------------------------------------------
+
+@mixin o-list-inline--unset() {
+  font-size: inherit;
+
+  > * {
+    font-size: inherit;
+    display: inherit;
+  }
+}

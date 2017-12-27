@@ -1,0 +1,32 @@
+
+/* -------------------------------------------------------------------------
+ * CORE
+ *
+ * This core file sets up the most important setup variable, core font size.
+ * It underpin some calculations based on that value.
+ * Should be modified with caution.
+ * Values should be expressed in PX.
+ *
+ */
+
+$s-core__font-size:          16px !default;
+
+
+////////////////////////////////////////////////////////////////////////////////
+//                               W A R N I N G                                //
+//                  DO NOT MODIFY ANYTHING BEYOND THIS POINT                  //
+////////////////////////////////////////////////////////////////////////////////
+
+/* SAFE CHECKING
+ * Check that the chosen core values are pixel numbers.
+ */
+
+@if (type-of($s-core__font-size) == number) {
+
+  @if (unit($s-core__font-size) != "px") {
+    @error "$s-core__font-size: needs to be a pixel value.";
+  }
+
+} @else {
+  @error "$s-core__font-size: needs to be a number.";
+}

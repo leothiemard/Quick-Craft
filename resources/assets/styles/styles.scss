@@ -1,0 +1,80 @@
+
+/* -------------------------------------------------------------------------
+ * CONFIG
+ *
+ * Main configuration, settings, foundations and tools. No CSS output from
+ * them. Should be modified with caution. Values should be expressed in PX,
+ * if you plan to convert them into relative units, please, do so on usage.
+ *
+ * settings ................... Main configuration, settings and core functions
+ * foundations ................ Visual language expressed into SASS vars
+ * tools ...................... Helper mixins for mq, quantities, ...
+ *
+ */
+
+@import "settings/settings";
+@import "foundations/foundations";
+@import "tools/tools";
+
+
+/* -------------------------------------------------------------------------
+ * BASE
+ *
+ * Main HTML elements reset and setup, and base material
+ *
+ * generic .................... Normalize browser behaviour
+ * elements ................... HTML elements default appearance
+ * material ................... Class based elements: headings, icons, ...
+ *
+ */
+
+@import "generic/generic";
+@import "elements/elements";
+@import "material/material";
+
+
+/* -------------------------------------------------------------------------
+ * ABSTRACTIONS
+ *
+ * Reusable design abstractions and patterns
+ *
+ * spacings ................... An abstraction about spaces
+ * objects .................... Unstyled design patterns
+ * animations ................. Movement and transition patterns
+ * color-schemes .............. Color combination schemes
+ *
+ */
+
+@import "spacings/spacings";
+@import "objects/objects";
+@import "animations/animations";
+@import "color-schemes/color-schemes";
+
+
+/* -------------------------------------------------------------------------
+ * CONTENT
+ *
+ * Tangible content. Empty group on ITCSS. Organize and put your
+ * content here. A proposal on how to organize your content could be:
+ *
+ * components ................. Abstract named components
+ * widgets .................... Data and business driven components
+ * templates .................. Template layouts
+ * renderings ................. Concrete use cases of components and widgets
+ * pages ...................... Concrete use cases of templates
+ *
+ */
+
+// @import "components/components";
+
+
+/* -------------------------------------------------------------------------
+ * OVERRIDES
+ *
+ * Safe belt utilities
+ *
+ * utilities .................. Helper classes with important statements
+ *
+ */
+
+@import "utilities/utilities";
