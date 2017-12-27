@@ -1,0 +1,25 @@
+{#
+ # Layout template
+ # ---------------
+ #
+ # This layout template extends the _layouts/base.html layout, and defines the
+ # main site layout: the header, footer, and main content area.
+ #
+ # It’s never accessed directly. Instead it is extended by all of our main site
+ # templates.
+ #
+ # This template defines one block region, `main`, which should be extended by
+ # child templates to define the main contents for the page.
+-#}
+
+{% extends "_layouts/base" %}
+
+{% block body %}
+	<header>
+		<h1>Welcome to Quick-Craft</h1>
+		<p>
+			A modern development environment boilerplate to quick-start your project using Craft CMS.
+		</p>
+		<a href="https://github.com/leothiemard/quick-craft">Learn more on Github.</a>
+	</header>
+{% endblock %}

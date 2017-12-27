@@ -1,0 +1,51 @@
+{#
+ # Layout template
+ # ---------------
+ #
+ # This template defines your site’s global layout. It can be
+ # “extended” by other templates to fill in the gaps.
+ #
+ # See Twig’s Template Inheritance documentation for more details:
+ # http://twig.sensiolabs.org/doc/templates.html#template-inheritance
+ #}
+
+{% header "Cache-Control: private, max-age=3600" %}
+{% header "x-frame-options: SAMEORIGIN" %}
+{% header "X-XSS-Protection: 1; mode=block" %}
+{% header "X-Content-Type-Options: nosniff" %}
+
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+
+    {% block head %}
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#000000">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="/assets/favicons/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/assets/favicons/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="/assets/favicons/manifest.json">
+        <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg">
+
+        <meta http-equiv="Accept-CH" content="DPR, Width, Viewport-Width">
+
+        {# -- LoadJS -- #}
+        <script>
+            {{ source('_includes/scripts/loadjs.min.js') }}
+        </script>
+        {# -- End LoadJS -- #}
+
+        <link rel="stylesheet" href="/css/styles.css">
+    {% endblock %}
+
+</head>
+
+    <body>
+        {% block body %}{% endblock %}
+        <script>loadjs(['/js/plugins.min.js','/js/app.min.js'], 'app');</script>
+    </body>
+
+</html>
