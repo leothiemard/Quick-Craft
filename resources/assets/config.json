@@ -1,0 +1,10 @@
+{
+  "entry": {
+    "app": [
+      "./resources/assets/scripts/app.js",
+      "./resources/assets/styles/styles.scss"
+    ],
+    "plugins": "./resources/assets/scripts/plugins.js"
+  },
+  "proxyUrl": "http://www.quick-craft.localhost"
+}

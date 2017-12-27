@@ -1,0 +1,19 @@
+{
+"require": {
+  "php": "7.1.*",
+  "vlucas/phpdotenv": "^2.4",
+  "oscarotero/env": "^1.0",
+  "ext-mbstring": "*",
+  "ext-imagick": "*",
+  "ext-mcrypt": "*",
+  "ext-redis": "*"
+},
+"require-dev": {
+    "squizlabs/php_codesniffer": "^2.5.1"
+  },
+  "scripts": {
+    "compile": [
+      "yarn build"
+    ]
+  }
+}

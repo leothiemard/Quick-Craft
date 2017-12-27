@@ -1,0 +1,55 @@
+# Developer files
+personal
+
+# PhpStorm generated files
+.idea
+
+# OSX generated files
+*.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# Package Managers
+node_modules
+npm_modules
+bower_components
+_webdata
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Vendor (e.g. Composer)
+vendor/*
+!vendor/.gitkeep
+
+# Dotenv
+.env
+.env.*
+!.env.example
+
+# Docker
+docker/*
+
+# Uploads, runtime data and temp files, but keep the layout assets
+/craft/storage/runtime/
+/craft/storage/cache/
+/craft/storage/logs/
+/craft/storage/compiled_templates/
+.sass-cache
+
+# Static assets
+/craft/templates/*
+/resources/views/_inlinejs
+/resources/views/_includes/_critical/critical_*.html
+/resources/views/_includes/_scripts/*.html
+/public/assets
+/public/css
+/public/js
+/public/fonts
