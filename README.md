@@ -29,7 +29,7 @@ Make sure all dependencies have been installed before moving on:
 2. Serve the `/public` folder locally
 3. Duplicate `.env.example` and rename the copy `.env`
 4. Open the `.env` file and update with your own environment variables
-4. Open the `/resources/build/config.json` file and update the `proxyUrl` variable.  
+5. Open the `/resources/assets/config.json` file and update the `proxyUrl` variable.  
 
 ### Build Commands
 
