@@ -1,7 +1,7 @@
 /* -------------------------------------------------------------------------
  * BODY
  *
- * body known as a material not as a tag
+ * Body known as a material not as a tag
  *
  */
 
@@ -28,23 +28,23 @@ $m-body__mod-sizes--enabled :   true !default;
 $m-body__mod-sizes          :   (
   "tiny" :                   (
     "font-family" :    $e-document__body--font-family,
-    "font-size"   :    $f-font-size--xs,
+    "font-size"   :    $b-font-size--xs,
     "line-height" :    $e-document__body--line-height
   ),
   "small" :                  (
     "font-family" :    $e-document__body--font-family,
-    "font-size"   :    $f-font-size--s,
+    "font-size"   :    $b-font-size--s,
     "line-height" :    $e-document__body--line-height
   ),
   "medium"        :    $m-body__properties,
   "large" :                  (
     "font-family":    $e-document__body--font-family,
-    "font-size":      $f-font-size--l,
+    "font-size":      $b-font-size--l,
     "line-height":    $e-document__body--line-height
   ),
   "huge":                   (
     "font-family":    $e-document__body--font-family,
-    "font-size":      $f-font-size--xl,
+    "font-size":      $b-font-size--xl,
     "line-height":    $e-document__body--line-height
   )
 ) !default;

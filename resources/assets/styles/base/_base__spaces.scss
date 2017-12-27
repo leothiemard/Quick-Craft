@@ -3,7 +3,6 @@
  * SPACES
  *
  * Base spaces naming and value pairing
- * The values here are for sample proposes, consider add your owns
  *
  * Modifying these variables can break the vertical rhythm.
  * Should be modified with caution.
@@ -17,27 +16,27 @@
 
 // Main space
 
-$f-space:                     24px !default;
+$b-space:                     24px !default;
 
 // Space variants
 
-$f-space--none:               0 !default;
-$f-space--tiny:               round($f-space * .25) !default;
-$f-space--small:              round($f-space * .5) !default;
-$f-space--medium:             round($f-space * 1) !default;
-$f-space--large:              round($f-space * 2) !default;
-$f-space--huge:               round($f-space * 4) !default;
+$b-space--none:               0 !default;
+$b-space--tiny:               round($b-space * .25) !default;
+$b-space--small:              round($b-space * .5) !default;
+$b-space--medium:             round($b-space * 1) !default;
+$b-space--large:              round($b-space * 2) !default;
+$b-space--huge:               round($b-space * 4) !default;
 
 
 // Spaces map
 
-$f-spaces: (
-  "none":                     $f-space--none,
-  "tiny":                     $f-space--tiny,
-  "small":                    $f-space--small,
-  "medium":                   $f-space--medium,
-  "large":                    $f-space--large,
-  "huge":                     $f-space--huge,
+$b-spaces: (
+  "none":                     $b-space--none,
+  "tiny":                     $b-space--tiny,
+  "small":                    $b-space--small,
+  "medium":                   $b-space--medium,
+  "large":                    $b-space--large,
+  "huge":                     $b-space--huge,
 ) !default;
 
 
@@ -50,19 +49,19 @@ $f-spaces: (
  * Check that the chosen values are pixel numbers.
  */
 
-@each $_space__name, $_space__value in $f-spaces {
+@each $_space__name, $_space__value in $b-spaces {
 
   @if (type-of($_space__value) == number) {
 
     @if ($_space__name != "none") {
 
       @if (unit($_space__value) != "px") {
-        @error "$f-spaces: `#{$_space__name}` needs to be a pixel value.";
+        @error "$b-spaces: `#{$_space__name}` needs to be a pixel value.";
       }
     }
 
   } @else {
-    @error "$f-spaces: `#{$_space__name}` needs to be a number.";
+    @error "$b-spaces: `#{$_space__name}` needs to be a number.";
   }
 
 }

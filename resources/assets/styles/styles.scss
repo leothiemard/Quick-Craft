@@ -2,18 +2,18 @@
 /* -------------------------------------------------------------------------
  * CONFIG
  *
- * Main configuration, settings, foundations and tools. No CSS output from
+ * Main configuration, settings, base and tools. No CSS output from
  * them. Should be modified with caution. Values should be expressed in PX,
  * if you plan to convert them into relative units, please, do so on usage.
  *
  * settings ................... Main configuration, settings and core functions
- * foundations ................ Visual language expressed into SASS vars
+ * base ................ Visual language expressed into SASS vars
  * tools ...................... Helper mixins for mq, quantities, ...
  *
  */
 
 @import "settings/settings";
-@import "foundations/foundations";
+@import "base/base";
 @import "tools/tools";
 
 

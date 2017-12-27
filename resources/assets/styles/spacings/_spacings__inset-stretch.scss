@@ -3,8 +3,7 @@
  *
  * To give space between container and content emphasizing right and left spaces.
  *
- * TIP:
- * You can modify the amount of generated spaces by overriding the $sp-inset-stretch__spaces variable.
+ * Modify the amount of generated spaces by overriding the $sp-inset-stretch__spaces variable.
  *
  */
 
@@ -17,7 +16,7 @@ $sp-inset-stretch__enabled:               true !default;
 
 // Spaces
 
-$sp-inset-stretch__spaces:                $f-spaces !default;
+$sp-inset-stretch__spaces:                $b-spaces !default;
 
 // Space as a mixin
 // --------------------------------------------------

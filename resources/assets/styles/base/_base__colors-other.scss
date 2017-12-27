@@ -1,0 +1,19 @@
+
+/* -------------------------------------------------------------------------
+ * COLORS OTHER
+ *
+ * Define all other colors
+ *
+ */
+
+
+// Main other colors
+
+$b-color__digital-blue:             #0070d2 !default;
+
+
+// Other color map
+
+$b-colors-other: (
+  "digital-blue":                   $b-color__digital-blue,
+) !default;

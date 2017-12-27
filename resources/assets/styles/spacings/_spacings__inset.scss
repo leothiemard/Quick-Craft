@@ -3,8 +3,7 @@
  *
  * To give space between container and content.
  *
- * TIP:
- * You can modify the amount of generated spaces by overriding the $sp-inset__spaces variable.
+ * Modify the amount of generated spaces by overriding the $sp-inset__spaces variable.
  *
  */
 
@@ -18,7 +17,7 @@ $sp-inset__enabled:           true !default;
 
 // Spaces
 
-$sp-inset__spaces:            $f-spaces !default;
+$sp-inset__spaces:            $b-spaces !default;
 
 
 // Space as a mixin

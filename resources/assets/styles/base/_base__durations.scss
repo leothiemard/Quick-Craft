@@ -1,0 +1,29 @@
+
+/* -------------------------------------------------------------------------
+ * DURATIONS
+ *
+ * Define durations base
+ *
+ */
+
+
+// Main duration
+
+$b-duration:                  .3s !default;
+
+// Duration variants
+
+$b-duration--none:            $b-duration * 0 !default;
+$b-duration--fast:            $b-duration / 2 !default;
+$b-duration--normal:          $b-duration !default;
+$b-duration--slow:            $b-duration * 2 !default;
+
+
+// Durations map
+
+$b-durations: (
+  "none":                     $b-duration--none,
+  "fast":                     $b-duration--fast,
+  "normal":                   $b-duration--normal,
+  "slow":                     $b-duration--slow,
+) !default;

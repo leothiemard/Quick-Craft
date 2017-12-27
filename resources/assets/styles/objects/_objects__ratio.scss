@@ -16,10 +16,10 @@ $o-ratio--enabled                 :       true !default;
 // Modifiers Ratios
 
 $o-ratio__mod-ratios--enabled     :       true !default;
-$o-ratio__mod-ratios              :       $f-aspect-ratios !default;
+$o-ratio__mod-ratios              :       $b-aspect-ratios !default;
 
 $o-ratio__mod-bp--enabled         :       true !default;
-$o-ratio__mod-bp                  :       map_remove($f-breakpoints, "xxs") !default;
+$o-ratio__mod-bp                  :       map_remove($b-breakpoints, "xxs") !default;
 
 
 // Object as a mixin

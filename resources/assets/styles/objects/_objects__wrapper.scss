@@ -17,7 +17,7 @@ $o-wrapper--enabled:                  true !default;
 
 $o-wrapper__mod-bp-from--enabled:     true !default;
 $o-wrapper__mod-bp-to--enabled:       true !default;
-$o-wrapper__mod-bp:                   map-remove($f-breakpoints, "xxs") !default;
+$o-wrapper__mod-bp:                   map-remove($b-breakpoints, "xxs") !default;
 
 
 // Object selector output

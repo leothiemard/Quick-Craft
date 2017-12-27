@@ -1,0 +1,25 @@
+
+/* -------------------------------------------------------------------------
+ * LINE HEIGHTS
+ *
+ * Values should be expressed unit less
+ *
+ */
+
+
+// Main line heights
+
+$b-line-height--tiny:            1 !default;
+$b-line-height--small:           1.25 !default;
+$b-line-height--medium:          1.618 !default;
+$b-line-height--large:           2 !default;
+
+
+// Line heights map
+
+$b-line-heights: (
+  "tiny":       $b-line-height--tiny,
+  "small":      $b-line-height--small,
+  "medium":     $b-line-height--medium,
+  "large":      $b-line-height--large,
+) !default;

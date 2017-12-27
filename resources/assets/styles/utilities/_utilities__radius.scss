@@ -1,7 +1,8 @@
+
 /* -------------------------------------------------------------------------
- * RADIUSES
+ * RADIUS
  *
- * Foundation radiuses as border-radius
+ * Base radius as border-radius
  *
  */
 
@@ -11,19 +12,19 @@
 
 // Utility toggling
 
-$u-radiuses--enabled:           true !default;
+$u-radius--enabled:           true !default;
 
 // Font-families maps
 
-$u-radiuses__maps:              $f-radiuses !default;
+$u-radius__maps:              $b-radius !default;
 
 
 // Utilities output
 // --------------------------------------------------
 
 
-@if ($u-radiuses--enabled) {
-  @each $_radius__name, $_radius__value in $u-radiuses__maps {
+@if ($u-radius--enabled) {
+  @each $_radius__name, $_radius__value in $u-radius__maps {
     .u-radius--#{$_radius__name} {
       border-radius: $_radius__value !important;
     }

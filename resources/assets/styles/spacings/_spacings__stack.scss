@@ -3,8 +3,7 @@
  *
  * To separate stacked elements.
  *
- * TIP:
- * You can modify the amount of generated spaces by overriding the $sp-stack__spaces variable.
+ * Modify the amount of generated spaces by overriding the $sp-stack__spaces variable.
  *
  */
 
@@ -17,7 +16,7 @@ $sp-stack__enabled: true !default;
 
 // Spaces
 
-$sp-stack__spaces: $f-spaces !default;
+$sp-stack__spaces: $b-spaces !default;
 
 // Space as a mixin
 // --------------------------------------------------

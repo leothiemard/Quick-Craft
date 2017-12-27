@@ -2,7 +2,7 @@
 /* -------------------------------------------------------------------------
  * FONT-SIZES
  *
- * Foundation font-sizes
+ * Base font-sizes
  *
  */
 
@@ -16,7 +16,7 @@ $u-font-sizes--enabled:         true !default;
 
 // Font-sizes maps
 
-$u-font-sizes__maps:            $f-font-sizes !default;
+$u-font-sizes__maps:            $b-font-sizes !default;
 
 
 // Utilities output

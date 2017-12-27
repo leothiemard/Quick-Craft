@@ -1,0 +1,60 @@
+
+/* -------------------------------------------------------------------------
+ * BREAKPOINTS
+ *
+ * Viewport breakpoints
+ * Values should be expressed in PX.
+ *
+ * Extracted from [Google Material Design]
+ * (https://www.google.com/design/spec/layout/adaptive-ui.html)
+ *
+ */
+
+
+// Main breakpoints
+
+$b-breakpoint--xxs:         1px !default;
+$b-breakpoint--xs:          480px !default;
+$b-breakpoint--sm:          600px !default;
+$b-breakpoint--sml:         840px !default;
+$b-breakpoint--md:          960px !default;
+$b-breakpoint--lg:          1280px !default;
+$b-breakpoint--xl:          1440px !default;
+$b-breakpoint--xxl:         1600px !default;
+$b-breakpoint--xxxl:        1920px !default;
+
+
+// Breakpoints map
+
+$b-breakpoints: (
+  "xxs":                    $b-breakpoint--xxs,
+  "xs":                     $b-breakpoint--xs,
+  "sm":                     $b-breakpoint--sm,
+  "sml":                    $b-breakpoint--sml,
+  "md":                     $b-breakpoint--md,
+  "lg":                     $b-breakpoint--lg,
+  "xl":                     $b-breakpoint--xl,
+  "xxl":                    $b-breakpoint--xxl,
+  "xxxl":                   $b-breakpoint--xxxl,
+) !default;
+
+
+////////////////////////////////////////////////////////////////////////////////
+//                               W A R N I N G                                //
+//                  DO NOT MODIFY ANYTHING BEYOND THIS POINT                  //
+////////////////////////////////////////////////////////////////////////////////
+
+/* SAFE CHECKING
+ * Check that the chosen breakpoints are pixels.
+ */
+
+@each $_name, $_size in $b-breakpoints {
+
+  @if (type-of($_size) != number) {
+    @error "`$b-breakpoints: #{$_name}` needs to be a number.";
+  }
+
+  @if (unit($_size) != "px") {
+    @error "`$b-breakpoints: #{$_name}` needs to be a pixel value.";
+  }
+}

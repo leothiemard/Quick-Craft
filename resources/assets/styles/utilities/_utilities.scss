@@ -5,16 +5,16 @@
  * Helper classes with important statements
  *
  * alignments ............. Force text alignment
- * bgcolors ............... Foundation colors as a background color
- * colors ................. Foundation colors as color
- * font-families .......... Foundation font-families
- * font-sizes ............. Foundation font-sizes
+ * bgcolors ............... Base colors as a background color
+ * colors ................. Base colors as color
+ * font-families .......... Base font-families
+ * font-sizes ............. Base font-sizes
  * hidden ................. Force hide elements on certain breakpoints range
- * line-heights ........... Foundation line-heights
- * margins ................ Margin utilities based on foundations spaces
- * paddings ............... Padding utilities based on foundations spaces
- * radiuses ............... Foundation radiuses as border-radius
- * shadows ................ Foundation shadows
+ * line-heights ........... Base line-heights
+ * margins ................ Margin utilities based on base spaces
+ * paddings ............... Padding utilities based on base spaces
+ * radius ............... Base radius as border-radius
+ * shadows ................ Base shadows
  * widths ................. Fraction widths
  *
  */
@@ -29,6 +29,6 @@
 @import 'utilities__line-heights';
 @import 'utilities__margins';
 @import 'utilities__paddings';
-@import 'utilities__radiuses';
+@import 'utilities__radius';
 @import 'utilities__shadows';
 @import 'utilities__widths';

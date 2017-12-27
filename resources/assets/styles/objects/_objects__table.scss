@@ -18,12 +18,12 @@ $o-table--enabled:                      true !default;
 
 // Object Params
 
-$o-table__space:                        $f-space--none !default;
+$o-table__space:                        $b-space--none !default;
 
 // Modifiers Spaces
 
 $o-table_mod-spaces--enabled:           true !default;
-$o-table__mod-spaces:                   map_remove($f-spaces, "large", "huge") !default;
+$o-table__mod-spaces:                   map_remove($b-spaces, "large", "huge") !default;
 
 // Modifiers Fixed
 

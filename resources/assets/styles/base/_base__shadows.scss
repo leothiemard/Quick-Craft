@@ -1,0 +1,27 @@
+
+/* -------------------------------------------------------------------------
+ * SHADOWS
+ *
+ * Define uncolored shadow sizes
+ *
+ */
+
+
+// Main shadow
+
+$b-shadow:                    2px 2px 2px 2px !default;
+
+// Shadow variants
+
+$b-shadow--discrete:          $b-shadow !default;
+$b-shadow--elevated:          0 14px 28px 0 !default;
+$b-shadow--sunken:            inset 0 0 28px 0 !default;
+
+
+// Shadows map
+
+$b-shadows: (
+  "discrete":                 $b-shadow--discrete,
+  "elevated":                 $b-shadow--elevated,
+  "sunken":                   $b-shadow--sunken
+) !default;

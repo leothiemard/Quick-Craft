@@ -13,7 +13,7 @@
  * prod ................. Production
  */
 
-$s-config__env:                       "prod" !default;
+$s-config__env:                       "local" !default;
 
 
 /* -------------------------------------------------------------------------
@@ -29,8 +29,8 @@ $s-config__debug:                     if($s-config__env == "dev", true, false) !
  * where to refer for fonts, images and other resources
  */
 
-$s-config__path--img:                 "../img" !default;
-$s-config__path--fonts:               "../fonts" !default;
+$s-config__path--img:                 "../assets/images" !default;
+$s-config__path--fonts:               "../assets/fonts" !default;
 
 
 /* -------------------------------------------------------------------------

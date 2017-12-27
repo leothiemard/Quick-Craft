@@ -1,0 +1,29 @@
+
+/* -------------------------------------------------------------------------
+ * RADIUS
+ *
+ * Border radius sizes
+ *
+ */
+
+
+// Main radius
+
+$b-radius:                    6px !default;
+
+// Radius variants
+
+$b-radius--none:              0 !default;
+$b-radius--small:             round($b-radius * .5) !default;
+$b-radius--medium:            round($b-radius * 1) !default;
+$b-radius--large:             round($b-radius * 2) !default;
+
+
+// Radius map
+
+$b-radius: (
+  "none":                     $b-radius--none,
+  "small":                    $b-radius--small,
+  "medium":                   $b-radius--medium,
+  "large":                    $b-radius--large,
+) !default;

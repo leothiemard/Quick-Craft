@@ -2,7 +2,7 @@
 /* -------------------------------------------------------------------------
  * FONT-FAMILIES
  *
- * Foundation font-families
+ * Base font-families
  *
  */
 
@@ -16,7 +16,7 @@ $u-font-families--enabled:         true !default;
 
 // Font-families maps
 
-$u-font-families__maps:            $f-font-families !default;
+$u-font-families__maps:            $b-font-families !default;
 
 
 // Utilities output

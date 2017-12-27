@@ -2,7 +2,7 @@
 /* -------------------------------------------------------------------------
  * LINE-HEIGHTS
  *
- * Foundation line-heights
+ * Base line-heights
  *
  */
 
@@ -16,7 +16,7 @@ $u-line-height--enabled:         true !default;
 
 // Line-heights maps
 
-$u-line-height__maps:            $f-line-heights !default;
+$u-line-height__maps:            $b-line-heights !default;
 
 
 // Utilities output

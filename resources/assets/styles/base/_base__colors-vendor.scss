@@ -1,0 +1,41 @@
+
+/* -------------------------------------------------------------------------
+ * COLORS VENDOR
+ *
+ * Define all vendor colors
+ *
+ */
+
+
+// Main vendor colors
+
+$b-color__vendor-facebook:                #3b5998 !default;
+$b-color__vendor-twitter:                 #00aced !default;
+
+// Facebook shades
+
+$b-color__vendor-facebook--ultra-light:   #f7f7f7 !default;
+$b-color__vendor-facebook--light:         #dfe3ee !default;
+$b-color__vendor-facebook--semi-light:    #8b9dc3 !default;
+
+// Twitter shades
+
+$b-color__vendor-twitter--ultra-light:    #fff !default;
+$b-color__vendor-twitter--light:          #c0deed !default;
+$b-color__vendor-twitter--semi-light:     #1dcaff !default;
+$b-color__vendor-twitter--dark:           #0084b4 !default;
+
+
+// Vendor color map
+
+$b-colors-vendor: (
+  "facebook":                             $b-color__vendor-facebook,
+  "twitter":                              $b-color__vendor-twitter,
+  "facebook--ultra-light":                $b-color__vendor-facebook--ultra-light,
+  "facebook--light":                      $b-color__vendor-facebook--light,
+  "facebook--semi-light":                 $b-color__vendor-facebook--semi-light,
+  "twitter--ultra-light":                 $b-color__vendor-twitter--ultra-light,
+  "twitter--light":                       $b-color__vendor-twitter--light,
+  "twitter--semi-light":                  $b-color__vendor-twitter--semi-light,
+  "twitter--dark":                        $b-color__vendor-twitter--dark,
+) !default;

@@ -73,7 +73,7 @@ $o-layout__space:                             $g-reset__spacing--horizontal !def
 // Modifiers spaces
 
 $o-layout__mod-spaces--enabled:               true !default;
-$o-layout__mod-spaces:                        map_remove($f-spaces, "large", "huge") !default;
+$o-layout__mod-spaces:                        map_remove($b-spaces, "large", "huge") !default;
 
 // Modifiers Alignments
 

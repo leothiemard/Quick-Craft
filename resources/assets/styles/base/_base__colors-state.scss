@@ -1,0 +1,81 @@
+
+/* -------------------------------------------------------------------------
+ * COLORS STATE
+ *
+ * Define all state colors
+ *
+ */
+
+
+// Main state colors
+
+$b-color__state-success:                  #36ba33 !default;
+$b-color__state-info:                     #20a0de !default;
+$b-color__state-warning:                  #f99500 !default;
+$b-color__state-danger:                   #c1101f !default;
+
+// Success shades
+
+$b-color__state-success--ultra-light:     mix(#fff, $b-color__state-success, 93%) !default;
+$b-color__state-success--light:           lighten($b-color__state-success, 10%) !default;
+$b-color__state-success--semi-light:      lighten($b-color__state-success, 5%) !default;
+
+$b-color__state-success--semi-dark:       darken($b-color__state-success, 5%) !default;
+$b-color__state-success--dark:            darken($b-color__state-success, 15%) !default;
+
+// Info shades
+
+$b-color__state-info--ultra-light:        mix(#fff, $b-color__state-info, 93%) !default;
+$b-color__state-info--light:              lighten($b-color__state-info, 10%) !default;
+$b-color__state-info--semi-light:         lighten($b-color__state-info, 5%) !default;
+
+$b-color__state-info--semi-dark:          darken($b-color__state-info, 5%) !default;
+$b-color__state-info--dark:               darken($b-color__state-info, 15%) !default;
+
+// Warning shades
+
+$b-color__state-warning--ultra-light:     mix(#fff, $b-color__state-warning, 93%) !default;
+$b-color__state-warning--light:           lighten($b-color__state-warning, 10%) !default;
+$b-color__state-warning--semi-light:      lighten($b-color__state-warning, 5%) !default;
+
+$b-color__state-warning--semi-dark:       darken($b-color__state-warning, 5%) !default;
+$b-color__state-warning--dark:            darken($b-color__state-warning, 15%) !default;
+
+// Danger shades
+
+$b-color__state-danger--ultra-light:      mix(#fff, $b-color__state-danger, 93%) !default;
+$b-color__state-danger--light:            lighten($b-color__state-danger, 10%) !default;
+$b-color__state-danger--semi-light:       lighten($b-color__state-danger, 5%) !default;
+
+$b-color__state-danger--semi-dark:        darken($b-color__state-danger, 5%) !default;
+$b-color__state-danger--dark:             darken($b-color__state-danger, 15%) !default;
+
+
+// State color map
+
+$b-colors-state: (
+  "success":                            $b-color__state-success,
+  "info":                               $b-color__state-info,
+  "warning":                            $b-color__state-warning,
+  "danger":                             $b-color__state-danger,
+  "success--ultra-light":               $b-color__state-success--ultra-light,
+  "success--light":                     $b-color__state-success--light,
+  "success--semi-light":                $b-color__state-success--semi-light,
+  "success--semi-dark":                 $b-color__state-success--semi-dark,
+  "success--dark":                      $b-color__state-success--dark,
+  "info--ultra-light":                  $b-color__state-info--ultra-light,
+  "info--light":                        $b-color__state-info--light,
+  "info--semi-light":                   $b-color__state-info--semi-light,
+  "info--semi-dark":                    $b-color__state-info--semi-dark,
+  "info--dark":                         $b-color__state-info--dark,
+  "warning--ultra-light":               $b-color__state-warning--ultra-light,
+  "warning--light":                     $b-color__state-warning--light,
+  "warning--semi-light":                $b-color__state-warning--semi-light,
+  "warning--semi-dark":                 $b-color__state-warning--semi-dark,
+  "warning--dark":                      $b-color__state-warning--dark,
+  "danger--ultra-light":                $b-color__state-danger--ultra-light,
+  "danger--light":                      $b-color__state-danger--light,
+  "danger--semi-light":                 $b-color__state-danger--semi-light,
+  "danger--semi-dark":                  $b-color__state-danger--semi-dark,
+  "danger--dark":                       $b-color__state-danger--dark,
+) !default;

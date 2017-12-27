@@ -25,7 +25,7 @@ $o-pack__space:                             $g-reset__spacing--horizontal !defau
 // Modifiers Spaces
 
 $o-pack__mod-spaces--enabled:               true !default;
-$o-pack-spaces:                             map_remove($f-spaces, "large", "huge") !default;
+$o-pack-spaces:                             map_remove($b-spaces, "large", "huge") !default;
 
 // Modifiers Alignments
 

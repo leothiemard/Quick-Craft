@@ -15,9 +15,9 @@ $m-heading--enabled: true !default;
 // Material default properties
 
 $m-heading__properties: (
-  "font-family"   : $f-font-family__secondary,
+  "font-family"   : $b-font-family__secondary,
   "font-weight"   : 400,
-  "font-size"     : $f-font-size--xxl,
+  "font-size"     : $b-font-size--xxl,
   "line-height"   : $e-headings__line-height,
   "margin-bottom" : $e-headings__margin-bottom
 ) !default;
@@ -27,31 +27,31 @@ $m-heading__properties: (
 $m-heading__mod-sizes--enabled : true !default;
 $m-heading__mod-sizes          : (
   "tiny": (
-    "font-family"   : $f-font-family__primary,
+    "font-family"   : $b-font-family__primary,
     "font-weight"   : 700,
-    "font-size"     : $f-font-size--l,
-    "line-height"   : $f-line-height--small,
+    "font-size"     : $b-font-size--l,
+    "line-height"   : $b-line-height--small,
     "margin-bottom" : $g-reset__spacing--vertical
   ),
   "small": (
-    "font-family"   : $f-font-family__primary,
+    "font-family"   : $b-font-family__primary,
     "font-weight"   : 400,
-    "font-size"     : $f-font-size--xl,
-    "line-height"   : $f-line-height--small,
+    "font-size"     : $b-font-size--xl,
+    "line-height"   : $b-line-height--small,
     "margin-bottom" : $g-reset__spacing--vertical
   ),
   "medium"          : $m-heading__properties,
   "large": (
-    "font-family"   : $f-font-family__secondary,
+    "font-family"   : $b-font-family__secondary,
     "font-weight"   : 400,
-    "font-size"     : $f-font-size--xxxl,
+    "font-size"     : $b-font-size--xxxl,
     "line-height"   : $e-headings__line-height,
     "margin-bottom" : $e-headings__margin-bottom
   ),
   "huge": (
-    "font-family"   : $f-font-family__secondary,
+    "font-family"   : $b-font-family__secondary,
     "font-weight"   : 400,
-    "font-size"     : $f-font-size--xxxl + $f-font-size--m,
+    "font-size"     : $b-font-size--xxxl + $b-font-size--m,
     "line-height"   : $e-headings__line-height,
     "margin-bottom" : $e-headings__margin-bottom
   )

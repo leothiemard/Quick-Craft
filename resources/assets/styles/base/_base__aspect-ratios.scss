@@ -1,0 +1,47 @@
+
+/* -------------------------------------------------------------------------
+ * ASPECT RATIOS
+ *
+ * Used to preserve relation between width and height
+ *
+ */
+
+
+// Main aspect ratios
+
+$b-aspect-ratio--1-1:       1 / 1 !default;
+$b-aspect-ratio--4-3:       3 / 4 !default;
+$b-aspect-ratio--3-2:       2 / 3 !default;
+$b-aspect-ratio--16-9:      9 / 16 !default;
+$b-aspect-ratio--2-1:       1 / 2 !default;
+$b-aspect-ratio--golden:    1.618 !default;
+
+
+// Aspect ratios map
+
+$b-aspect-ratios: (
+  quote(s-core-string-ratio(1, 1)):  $b-aspect-ratio--1-1,
+  quote(s-core-string-ratio(4, 3)):  $b-aspect-ratio--4-3,
+  quote(s-core-string-ratio(3, 2)):  $b-aspect-ratio--3-2,
+  quote(s-core-string-ratio(16, 9)): $b-aspect-ratio--16-9,
+  quote(s-core-string-ratio(2, 1)):  $b-aspect-ratio--2-1,
+  "golden-h" : 1 / $b-aspect-ratio--golden,
+  "golden-v" : $b-aspect-ratio--golden
+) !default;
+
+
+////////////////////////////////////////////////////////////////////////////////
+//                               W A R N I N G                                //
+//                  DO NOT MODIFY ANYTHING BEYOND THIS POINT                  //
+////////////////////////////////////////////////////////////////////////////////
+
+/* SAFE CHECKING
+ * Check that the chosen ratios are numbers.
+ */
+
+@each $_name, $_ratio in $b-aspect-ratios {
+
+  @if (type-of($_ratio) != number) {
+    @error "`$b-aspect-ratios: #{$_ratio}` needs to be a number.";
+  }
+}

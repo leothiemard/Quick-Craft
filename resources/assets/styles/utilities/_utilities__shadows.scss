@@ -2,7 +2,7 @@
 /* -------------------------------------------------------------------------
  * SHADOWS
  *
- * Foundation shadows
+ * Base shadows
  *
  */
 
@@ -16,7 +16,7 @@ $u-shadows--enabled:         true !default;
 
 // Shadows maps
 
-$u-shadows__maps:            $f-shadows !default;
+$u-shadows__maps:            $b-shadows !default;
 
 
 // Utilities output

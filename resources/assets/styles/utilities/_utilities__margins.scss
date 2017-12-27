@@ -2,7 +2,7 @@
 /* -------------------------------------------------------------------------
  * Margins
  *
- * Margin utilities based on foundations spaces
+ * Margin utilities based on base spaces
  *
  */
 
@@ -15,7 +15,7 @@ $u-margin--enabled: true !default;
 
 // Utility spaces
 
-$u-margin__spaces: $f-spaces !default;
+$u-margin__spaces: $b-spaces !default;
 $u-margin__classes: (
   "mt": (
     "margin-top"
