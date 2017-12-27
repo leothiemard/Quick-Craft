@@ -25,12 +25,15 @@ Make sure all dependencies have been installed before moving on:
 
 ### Configurations
 
-1. Create a new empty database
-2. Serve the `/public` folder locally
+1. Serve the `/public` folder locally (Using [Vagrant](https://github.com/hashicorp/vagrant), [MAMP](https://www.mamp.info/de/), [Laravel Valet](https://laravel.com/docs/5.5/valet) or whichever you prefer…)
+2. Create a new empty database
 3. Duplicate `.env.example` and rename the copy `.env`
 4. Open the `.env` file and update with your own environment variables
-5. Open the `/resources/assets/config.json` file and update the `proxyUrl` variable  
-
+5. Open the `/resources/assets/config.json` file and update the `proxyUrl` variable
+6. There are two possibilities to run the Craft built-in installer:
+    1. Run `yarn start`, wait for browser-sync to launch your browser and navigate to `http://localhost:8000/admin`  
+    2. *OR* — Go to your local environmnent site (i.g. `your-app.dev`) and navigate to `your-app.dev/admin`
+      
 ### Build Commands
 
 * `yarn start` — Compile assets when file changes are made, start Browsersync session
